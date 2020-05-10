@@ -2,9 +2,13 @@
 /* ==            SUMMARY              */
 /*---------------------------------------- */
 
-/* L		- 1 - */
-/* L		- 2 - */
-/* L		- 3 - */
+/* COLOR CODES  L- 9 */
+/* DÉFINITIONS DES POLICES L- 69 - */
+/* ELEMENTS PRINCIPAUX L-79 */
+/* HEADER - Bande latérale L-96 */
+/* CV L-173 */
+/* MEDIA QUERIES L-256 */
+
 
 /* ---------------------------------------- */
 /* ==       COLOR CODES           */
@@ -197,9 +201,7 @@ header p {
 
 
 
-/*     Section FORMATION      */
-
-/*     Section EXPERIENCES PROFESSIONELLES      */
+/*     Section FORMATION  & Section EXPERIENCES PROFESSIONELLES      */
 
 section {
 	width: 100%;
@@ -343,10 +345,6 @@ article {
 
 
 
-
-
-
-
 	/*     HEADER - Bande latérale     */
 
 
@@ -414,14 +412,33 @@ article {
 
 /*     Ecran tablette 768px - 991px     */
 @media all and (min-width: 768px) and (max-width: 991px) {
+
+	/*     HEADER - Bande latérale     */
+
 	header {
 		width: 33%;
 	}
+
+	.logos {
+		width: 25%;
+    	margin: auto;
+	}
+
+	/* ==           CV             */
 
 	#cv {
 		margin: 15px;
 	}
 
+	.titre {
+		margin: 25px 0 25px 0;
+	}
+
+	article {
+		align-items: baseline;
+	}
+
+	
 	.colonne-gauche {
 		width: 20%;
 	}
@@ -434,21 +451,8 @@ article {
 		width: 75%;
 	}
 
-	article {
-		align-items: baseline;
-	}
+	
 
-	.titre {
-		margin: 25px 0 25px 0;
-	}
-
-	.logos {
-		width: 25%;
-    	margin: auto;
-	}
-
-
-	}
 }
 
 
