@@ -123,6 +123,11 @@ header {
 	border: solid 4px #C2185B;
 }
 
+#telephone {
+	color: white;
+	font-style: none;
+}
+
 header h3 {
 	color: #E91E63;
 	background: #8BC34A;
