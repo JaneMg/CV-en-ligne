@@ -2,12 +2,12 @@
 /* ==            SUMMARY              */
 /*---------------------------------------- */
 
-/* COLOR CODES  L- 9 */
-/* DÉFINITIONS DES POLICES L- 69 - */
-/* ELEMENTS PRINCIPAUX L-79 */
-/* HEADER - Bande latérale L-96 */
-/* CV L-173 */
-/* MEDIA QUERIES L-256 */
+/* COLOR CODES  L- 13 */
+/* DÉFINITIONS DES POLICES L- 23 - */
+/* ELEMENTS PRINCIPAUX L-34 */
+/* HEADER - Bande latérale L-50 */
+/* CV L-132 */
+/* MEDIA QUERIES L-210 */
 
 
 /* ---------------------------------------- */
@@ -19,55 +19,6 @@ Pink :	#E91E63 ;
 Pink dark (circle image) : #C2185B ;
 Green (visited links) :	#8BC34A ou 	rgb(139, 195, 74);
 Grey (all) : #455A64;
-
-*/
-
-/* ---------------------------------------- */
-/* == DÉFINITIONS DES POLICES*/
-/*---------------------------------------- */
-
-/* ---------------------------------------- */
-/* == ÉLÉMENTS PRINCIPAUX */
-/*---------------------------------------- */
-
-/*     HEADER - Bande latérale     */
-
-/*     CV      */
-
-
-/* ---------------------------------------- */
-/* ==      HEADER - Bande latéral             */
-/*---------------------------------------- */
-
-/*     Contact     */
-
-/*     A propos      */
-
-/*     Loisirs     */
-
-/* ---------------------------------------- */
-/* ==           CV             */
-/*---------------------------------------- */
-
-/*     Titre CV     */
-
-/*     Section FORMATION      */
-
-/*     Section EXPERIENCES PROFESSIONELLES      */
-
-/*     Section RECOMMANDATIONS      */
-
-/* ---------------------------------------- */
-/* ==       MEDIAS QUERIS        */
-/*---------------------------------------- */
-
-/*     Ecran mobile <768px      */
-
-/*     Ecran tablette 768px - 991px     */
-
-/*     Ecran desktop  >991     */
-
-/* --------------------------------------------------------------------------------- */
 
 /* ---------------------------------------- */
 /* == DÉFINITIONS DES POLICES*/
@@ -88,12 +39,15 @@ body {
 	margin: auto;
 	width: 100%;
 	display: flex;
+	max-width: 1200px;
+
 
 }
 
 h1, h2,  h3, h4, p {
 	color: #37474F;
 }
+
 
 
 /* ---------------------------------------- */
@@ -103,7 +57,6 @@ h1, h2,  h3, h4, p {
 header {
 	background-color :#E91E63;
 	width: 45%;
-	height: auto;
 	display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -111,7 +64,6 @@ header {
 
 #photo-j {
 	width: 55%;
-	height: auto;
 	margin: 60px auto;
 	
 }
@@ -119,21 +71,15 @@ header {
 #photo-j img {
 	border-radius: 100%;
 	width: 94%;
-	height: auto;
 	border: solid 4px #C2185B;
 }
 
-#telephone {
-	color: white;
-	text-decoration: : none;
-}
 
 header h3 {
 	color: #E91E63;
 	background: #8BC34A;
 	margin: auto;
     width: 100%;
-    height: auto;
     text-align: center;
     padding: 10px 0;
     font-size: 1.6em;
@@ -169,13 +115,18 @@ header p {
 }
 
 .logos i {
-	border: solid 2px;
-	border-radius: 100%;
 	color: white;
-	margin: auto;
-    border-radius: 60%;
-    padding: 10px;
-    border-color: white;
+}
+
+.logo-circle {
+	width: 40px;
+	height: 40px;
+    color: white;
+    border: solid 2px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* ---------------------------------------- */
@@ -187,6 +138,10 @@ header p {
 	justify-content: space-around;
     display: flex;
     flex-direction: column;
+}
+
+#cv p {
+	text-align: justify;
 }
 
 
@@ -210,7 +165,6 @@ header p {
 
 section {
 	width: 100%;
-	height: auto;
 }
 
 section h2 {
@@ -228,12 +182,11 @@ section h2 {
 	align-items: baseline;
     justify-content: space-between;
     width: 20%;
-    height: auto;
 }
 .colonne-droite {
 	width: 65%;
 }
-article {
+article, #recommandations {
 	display: flex;
     justify-content: space-between;
     width: 100%;
@@ -305,7 +258,11 @@ article {
 		margin: 0;
 	}
 
-	article, #presentation {
+	#cv p {
+		text-align: initial;
+	}
+
+	article, #presentation, #recommandations {
 		width: 95%;
 		margin: auto;
 	}
@@ -355,7 +312,6 @@ article {
 
 	header {
 		width: 100%;
-		height: auto;
 		background: none;
 		border-top: groove 4px #E91E63;
 		margin-top: 20px;
@@ -371,7 +327,7 @@ article {
 
 	
 
-	.section1 p {
+	.informations p {
 		text-align: center;
 		margin: 15px;
 		color: #37474F;
@@ -439,7 +395,8 @@ article {
 		margin: 25px 0 25px 0;
 	}
 
-	article {
+
+	article, #recommandations {
 		align-items: baseline;
 	}
 
